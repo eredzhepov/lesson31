@@ -1,0 +1,92 @@
+.reviews
+  padding: 10px 0 70px 0
+  &__title
+    font-weight: bold
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 62px
+  &-slider
+    &__item
+      display: flex
+      flex-direction: column
+      align-items: center
+      position: relative
+      max-width: 730px
+      margin: 53px auto 0
+      background-color: #fff
+      border-radius: 8px
+      padding: 0 62px 34px 75px
+      &:before
+        content: ''
+        position: absolute
+        top: 13px
+        left: 62px
+        width: 70px
+        height: 47px
+        background-image: url(../img/quote-left.svg)
+        background-repeat: no-repeat
+      &:after
+        content: ''
+        position: absolute
+        top: 118px
+        right: 62px
+        width: 70px
+        height: 47px
+        background-image: url(../img/quote-right.svg)
+        background-repeat: no-repeat
+    &__button
+      position: absolute
+      top: 45%
+      transform: translateY(-50%)
+      width: 30px
+      height: 30px
+      background-repeat: no-repeat
+      background-size: 10px
+      background-position: center
+      border: none
+      background-color: transparent
+      z-index: 99
+      &--prev
+
+        background-image: url(../img/arrow-left.svg)
+        left: 18px
+      &--next
+        background-image: url(../img/arrow-right.svg)
+        right: 8px
+
+    &__profile
+      display: flex
+      flex-direction: column
+      align-items: center
+      margin-bottom: 29px
+    &__avatar
+      width: 90px
+      height: 90px
+      border-radius: 50%
+      object-fit: cover
+      margin-top: -49px
+
+    &__username
+      font-weight: bold
+      font-size: 12px
+      line-height: 15px
+      color: $primary
+      margin-bottom: 10px
+    &__date
+      font-size: 10px
+      line-height: 13px
+      margin-bottom: 4px
+    &__rating
+      display: flex
+      align-items: center
+    &__text
+      font-size: 12px
+      line-height: 160%
+      text-align: justify
+      color: $dark
+      max-width: 537px
+      margin: auto
+      max-height: 115px
+      overflow-y: auto
